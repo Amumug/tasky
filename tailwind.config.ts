@@ -72,11 +72,6 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      fontFamily: {
-        inrea: 'Inria Sans, sans-serif',
-        inter: 'Inter, sans-serif',
-        dmSans: 'DM Sans, sans-serif'
-      },
     },
   },
   plugins: [require("tailwindcss-animate")],

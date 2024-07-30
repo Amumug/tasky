@@ -1,6 +1,12 @@
 // src/components/Button.tsx
 
-import React from 'react';
+import { DM_Sans } from "next/font/google";
+import React from "react";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: "700",
+});
 
 interface ButtonProps {
   onClick?: () => void;
@@ -10,9 +16,8 @@ interface ButtonProps {
 const Navbutton: React.FC<ButtonProps> = ({ onClick, children }) => {
   return (
     <button
-      onClick={onClick} 
-      className="
-        px-[26px] py-2
+      onClick={onClick}
+      className={`px-[26px] py-2
         bg-[#f26969] text-neutral-900
         font-bold
         border-2 border-[#020014]
@@ -23,7 +28,7 @@ const Navbutton: React.FC<ButtonProps> = ({ onClick, children }) => {
         focus:outline-none
         hover:bg-[#e35d5d]
         whitespace-nowrap
-      "
+        ${dmSans.className}`}
     >
       {children}
     </button>
