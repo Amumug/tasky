@@ -2,6 +2,7 @@ import React from "react";
 import { Kumbh_Sans, Poppins, Inter } from "next/font/google";
 import Image from "next/image";
 import Herobutton from "./Herobutton";
+import Socialproof from "./Socialproof";
 
 const kumbh = Kumbh_Sans({
   subsets: ["latin"],
@@ -72,6 +73,7 @@ const Hero = () => {
             height={80}
           />
         </span>
+        <Socialproof/>
       </div>
     </>
   );
