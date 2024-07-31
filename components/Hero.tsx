@@ -65,7 +65,7 @@ const Hero = () => {
           <br /> into one streamlined platform.
         </p>
         <Herobutton >Get Started!</Herobutton>
-        <span className="absolute inset-0 left-[390px] top-[178px] pointer-events-none">
+        <span className="absolute inset-0 left-[392px] top-[178px] pointer-events-none">
           <Image
             src={"Crown--Streamline-Beveled-Scribbles.svg"}
             alt=""
